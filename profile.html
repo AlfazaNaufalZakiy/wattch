@@ -6,6 +6,7 @@
   <title>Profil Pengguna</title>
   <link rel="stylesheet" href="css/style.css">
   <script type="module" src="js/profile.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
   <div class="profile-container">
@@ -24,11 +25,23 @@
     </div>
   </div>
 
-  <div class="bottom-nav">
-    <div>Home</div>
-    <div>Electricity</div>
-    <div>History</div>
-    <div class="active">Profile</div>
-  </div>
+<div class="bottom-nav">
+  <a href="dashboard.html">
+    <div><i data-lucide="home"></i><br>Home</div>
+  </a>
+  <a href="electricity.html">
+    <div><i data-lucide="zap"></i><br>Electricity</div>
+  </a>
+  <a href="history.html">
+    <div><i data-lucide="clock"></i><br>History</div>
+  </a>
+  <a href="profile.html">
+    <div class="active"><i data-lucide="user"></i><br>Profile</div>
+  </a>
+</div>
+
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>

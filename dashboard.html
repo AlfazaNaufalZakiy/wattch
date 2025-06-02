@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Wattch</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+<body>
+  <div class="dashboard-container">
+    <div class="greeting">Selamat Pagi,</div>
+    <div class="username">Alfaza</div>
+
+    <div class="electric-card">
+      <div class="label">Penggunaan Listrik</div>
+      <div class="value">130 watt</div>
+      <div class="circle-icon">
+        <svg width="80" height="80">
+          <circle cx="40" cy="40" r="30" stroke="#ddd" stroke-width="8" fill="none" />
+          <circle cx="40" cy="40" r="30" stroke="#ff9736" stroke-width="8" fill="none" stroke-dasharray="188" stroke-dashoffset="56" />
+        </svg>
+        <i data-lucide="zap" style="position:absolute;top:22px;left:22px;" class="lucide"></i>
+      </div>
+    </div>
+
+    <div class="menu-buttons">
+      <button><i data-lucide="line-chart" class="lucide"></i> Real-Time</button>
+      <button><i data-lucide="bell" class="lucide"></i> Notification</button>
+      <button><i data-lucide="clock" class="lucide"></i> History</button>
+      <button><i data-lucide="message-square" class="lucide"></i> Chat Admin</button>
+    </div>
+  </div>
+
+<div class="bottom-nav">
+  <a href="dashboard.html">
+    <div class="active"><i data-lucide="home"></i><br>Home</div>
+  </a>
+  <a>
+    <div><i data-lucide="zap"></i><br>Electricity</div>
+  </a>
+  <a>
+    <div><i data-lucide="clock"></i><br>History</div>
+  </a>
+  <a href="profile.html">
+    <div><i data-lucide="user"></i><br>Profile</div>
+  </a>
+</div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
