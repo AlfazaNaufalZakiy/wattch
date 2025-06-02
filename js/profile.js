@@ -30,6 +30,15 @@ onAuthStateChanged(auth, async (user) => {
         const data = userSnap.data();
 
         // Tampilkan data ke halaman
+        const profileImg = document.getElementById("profileImage");
+        if (data.foto_url) {
+        profileImg.style.backgroundImage = `url('${data.foto_url}')`;
+        profileImg.style.backgroundSize = "cover";
+        profileImg.style.backgroundPosition = "center";
+        profileImg.style.backgroundRepeat = "no-repeat";
+        profileImg.textContent = ""; // hapus emoji jika gambar ada
+        }
+
         document.getElementById("profileName").innerText = data.nama || "Nama Pengguna";
         document.getElementById("profileInfo").innerHTML = `
           <div>No. HP: ${data.no_hp || "-"}</div>
