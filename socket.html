@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soket Listrik</title>
+  <link rel="stylesheet" href="css/socket.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <button class="back">&larr;</button>
+      <h1>Soket Listrik</h1>
+    </header>
+
+    <div class="socket-list">
+      <div class="socket">
+        <div class="icon"></div>
+        <div class="info">
+          <p class="name">Soket A</p>
+          <p class="status normal">Aktivitas: Normal</p>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="myCheckbox" checked />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="socket">
+        <div class="icon"></div>
+        <div class="info">
+          <p class="name">Soket B</p>
+          <p class="status mati">Aktivitas: Mati</p>
+        </div>
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="socket">
+        <div class="icon"></div>
+        <div class="info">
+          <p class="name">Soket C</p>
+          <p class="status awas">Aktivitas: Awas</p>
+        </div>
+        <label class="switch">
+          <input type="checkbox" checked />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="socket">
+        <div class="icon"></div>
+        <div class="info">
+          <p class="name">Soket D</p>
+          <p class="status bahaya">Aktivitas: Bahaya</p>
+        </div>
+        <label class="switch">
+          <input type="checkbox" checked />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <footer>
+      <div class="nav"><span>🏠</span><p>Home</p></div>
+      <div class="nav active"><span>⚡</span><p>Electricity</p></div>
+      <div class="nav"><span>🔄</span><p>History</p></div>
+      <div class="nav"><span>👤</span><p>Profile</p></div>
+    </footer>
+  </div>
+
+  <script type="module" src="js/socket.js"></script>
+</body>
+</html>
