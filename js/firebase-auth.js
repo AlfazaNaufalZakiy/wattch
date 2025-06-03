@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
               showConfirmButton: false,
               timer: 1500
             }).then(() => {
-              window.location.href = "dashboard.html";
+              window.location.href = "profile.html";
             });
           })
           .catch((error) => {
