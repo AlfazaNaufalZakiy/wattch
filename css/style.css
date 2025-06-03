@@ -242,4 +242,95 @@ input[type="password"] {
       font-weight: bold;
     }
 
+/* notif log */
+
+.notif-page {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: block;
+}
+
+.notif-page .container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  text-align: left;
+}
+
+.notif-page header {
+  padding: 16px;
+}
+
+.notif-page .title-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 8px;
+}
+
+.notif-page .title-bar .back {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.notif-page .title-bar h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.notif-page main {
+  padding: 0 16px;
+  margin-bottom: 60px;
+}
+
+.notif-page .notif-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notif-page .notif-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.notif-page .notif-list .icon {
+  font-size: 20px;
+  color: #ff9736;
+  margin-top: 4px;
+}
+
+.notif-page .notif-list p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.notif-page .notif-list span {
+  font-size: 12px;
+  color: #888;
+}
+
+.notif-page footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  border-top: 1px solid #ccc;
+  padding: 10px 0;
+  font-size: 12px;
+  color: #999;
+}
+
+.notif-page .nav-item.active {
+  color: black;
+  font-weight: bold;
+}
 
